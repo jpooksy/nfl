@@ -7,7 +7,7 @@ WITH source AS (
 
 renamed AS (
     SELECT 
-        -- Play identifiers
+        -- Play identifiers 
         play_id,
         game_id,
         old_game_id_x AS legacy_game_id,
