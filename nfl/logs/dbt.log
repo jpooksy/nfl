@@ -120,3 +120,662 @@ Update your versions in packages.yml, then run dbt deps
 [0m22:04:23.973203 [debug] [MainThread]: Command `dbt deps` succeeded at 22:04:23.973094 after 2.69 seconds
 [0m22:04:23.973967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9cb7d350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9cb7c690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9f5e6590>]}
 [0m22:04:23.974777 [debug] [MainThread]: Flushing usage events
+[0m22:09:56.554114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffadc8cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffade43b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffadcdac90>]}
+
+
+============================== 22:09:56.557087 | a0c311cd-11f4-44ff-b22a-22e37781c747 ==============================
+[0m22:09:56.557087 [info ] [MainThread]: Running with dbt=1.8.7
+[0m22:09:56.559162 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspaces/fxtn7c3oiwkalwzz', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/workspaces/fxtn7c3oiwkalwzz/repository/nfl/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:09:57.507179 [info ] [MainThread]: Initializing dbt-loom=0.5.6
+[0m22:09:57.507939 [info ] [MainThread]: dbt-loom: Patching ref protection methods to support dbt-loom dependencies.
+[0m22:09:57.510182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff97cbeb50>]}
+[0m22:09:57.582601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff97e03710>]}
+[0m22:09:57.583635 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m22:09:57.719116 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m22:09:57.957163 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:09:57.958041 [debug] [MainThread]: Partial parsing: updated file: nfl://models/marts/facts/fct_fantasy_point_leaders.sql
+[0m22:09:58.316857 [info ] [MainThread]: dbt-loom: Injecting nodes
+[0m22:09:58.317527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'plugin_get_nodes', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff94ef8310>]}
+[0m22:09:58.396422 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.nfl.marts.dimensions
+[0m22:09:58.410977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95905850>]}
+[0m22:09:58.553425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95a22b10>]}
+[0m22:09:58.554127 [info ] [MainThread]: Found 6 models, 1 test, 2 sources, 862 macros
+[0m22:09:58.555647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95b28150>]}
+[0m22:09:58.558769 [info ] [MainThread]: 
+[0m22:09:58.560119 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:09:58.566126 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_jparkerrogersJBgwU_analytics'
+[0m22:09:58.566842 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_jparkerrogersJBgwU_analytics'
+[0m22:09:58.577789 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_jparkerrogersJBgwU_analytics'
+[0m22:09:58.581280 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics"
+[0m22:09:58.584121 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics"
+[0m22:09:58.587423 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics"
+[0m22:09:58.588000 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics"} */
+show terse schemas in database jparkerrogersJBgwU_analytics
+    limit 10000
+[0m22:09:58.589720 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics"} */
+show terse schemas in database jparkerrogersJBgwU_analytics
+    limit 10000
+[0m22:09:58.591494 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics"} */
+show terse schemas in database jparkerrogersJBgwU_analytics
+    limit 10000
+[0m22:09:58.593116 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:09:58.594858 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:09:58.596692 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:09:59.145405 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.550 seconds
+[0m22:09:59.147379 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics: Close
+[0m22:09:59.148985 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.552 seconds
+[0m22:09:59.150760 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.558 seconds
+[0m22:09:59.152394 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics: Close
+[0m22:09:59.155332 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics: Close
+[0m22:09:59.329874 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_jparkerrogersJBgwU_analytics, now list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate)
+[0m22:09:59.330588 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_jparkerrogersJBgwU_analytics, now list_jparkerrogersJBgwU_analytics_dbt_parker_staging)
+[0m22:09:59.331247 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_jparkerrogersJBgwU_analytics, now list_jparkerrogersJBgwU_analytics_dbt_parker_facts)
+[0m22:09:59.341157 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate"
+[0m22:09:59.344091 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics_dbt_parker_staging"
+[0m22:09:59.347874 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics_dbt_parker_facts"
+[0m22:09:59.348399 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate"} */
+show objects in jparkerrogersJBgwU_analytics.dbt_parker_intermediate limit 10000
+[0m22:09:59.350116 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics_dbt_parker_staging"} */
+show objects in jparkerrogersJBgwU_analytics.dbt_parker_staging limit 10000
+[0m22:09:59.351832 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_facts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics_dbt_parker_facts"} */
+show objects in jparkerrogersJBgwU_analytics.dbt_parker_facts limit 10000
+[0m22:09:59.353470 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:09:59.355024 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:09:59.356698 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:09:59.817817 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.463 seconds
+[0m22:09:59.819783 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_staging: Close
+[0m22:09:59.843564 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.490 seconds
+[0m22:09:59.845323 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate: Close
+[0m22:09:59.900165 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.543 seconds
+[0m22:09:59.901837 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_facts: Close
+[0m22:10:00.076113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff97db9a10>]}
+[0m22:10:00.076933 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m22:10:00.078644 [info ] [MainThread]: 
+[0m22:10:00.082763 [debug] [Thread-1 (]: Began running node model.nfl.stg_play_by_play
+[0m22:10:00.084060 [info ] [Thread-1 (]: 1 of 6 START sql view model dbt_parker_staging.stg_play_by_play ................ [RUN]
+[0m22:10:00.083320 [debug] [Thread-2 (]: Began running node model.nfl.stg_player_stats_by_game
+[0m22:10:00.085789 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate, now model.nfl.stg_play_by_play)
+[0m22:10:00.087508 [info ] [Thread-2 (]: 2 of 6 START sql view model dbt_parker_staging.stg_player_stats_by_game ........ [RUN]
+[0m22:10:00.089044 [debug] [Thread-1 (]: Began compiling node model.nfl.stg_play_by_play
+[0m22:10:00.090919 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_jparkerrogersJBgwU_analytics_dbt_parker_facts, now model.nfl.stg_player_stats_by_game)
+[0m22:10:00.100951 [debug] [Thread-1 (]: Writing injected SQL for node "model.nfl.stg_play_by_play"
+[0m22:10:00.101544 [debug] [Thread-2 (]: Began compiling node model.nfl.stg_player_stats_by_game
+[0m22:10:00.108433 [debug] [Thread-2 (]: Writing injected SQL for node "model.nfl.stg_player_stats_by_game"
+[0m22:10:00.108967 [debug] [Thread-1 (]: Began executing node model.nfl.stg_play_by_play
+[0m22:10:00.140643 [debug] [Thread-1 (]: Writing runtime sql for node "model.nfl.stg_play_by_play"
+[0m22:10:00.141248 [debug] [Thread-2 (]: Began executing node model.nfl.stg_player_stats_by_game
+[0m22:10:00.148581 [debug] [Thread-2 (]: Writing runtime sql for node "model.nfl.stg_player_stats_by_game"
+[0m22:10:00.152114 [debug] [Thread-1 (]: Using snowflake connection "model.nfl.stg_play_by_play"
+[0m22:10:00.154645 [debug] [Thread-1 (]: On model.nfl.stg_play_by_play: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "node_id": "model.nfl.stg_play_by_play"} */
+create or replace   view jparkerrogersJBgwU_analytics.dbt_parker_staging.stg_play_by_play
+  
+   as (
+    WITH source AS (
+    SELECT 
+        * 
+    FROM 
+        NFL.PUBLIC.play_by_play
+),
+
+renamed AS (
+    SELECT 
+        -- Play identifiers 
+        play_id,
+        game_id,
+        old_game_id_x AS legacy_game_id,
+        season_type,
+        
+        -- Team information
+        home_team,
+        away_team,
+        posteam AS possession_team,
+        posteam_type AS possession_team_type,
+        defteam AS defending_team,
+
+        -- Field position and game context
+        side_of_field,
+        yardline_100 AS distance_to_goal,
+        game_date,
+        quarter_seconds_remaining,
+        half_seconds_remaining,
+        game_seconds_remaining,
+        game_half,
+        quarter_end,
+        drive,
+        qtr AS quarter,
+        down,
+        goal_to_go,
+        time AS game_clock,
+        yrdln AS yard_line,
+        ydstogo AS yards_to_go,
+        ydsnet AS drive_net_yards,
+        desc AS play_description,
+
+        -- Play details
+        play_type,
+        yards_gained,
+        shotgun,
+        no_huddle,
+        qb_dropback,
+        qb_kneel,
+        qb_spike,
+        qb_scramble,
+        pass_length,
+        pass_location,
+        air_yards,
+        yards_after_catch,
+        run_location,
+        run_gap,
+
+        -- Player involvement
+        rusher_player_id,
+        rusher_player_name,
+        receiver_player_id,
+        receiver_player_name,
+        passer_player_id,
+        passer_player_name,
+        fantasy_player_name,
+        fantasy_player_id,
+
+        -- Scoring and results
+        touchdown,
+        rush_touchdown,
+        pass_touchdown,
+        field_goal_result,
+        kick_distance,
+        extra_point_result,
+        two_point_conv_result AS two_point_conversion_result,
+        
+        -- Rushing stats
+        rush,
+        rush_attempt,
+        rushing_yards,
+
+        -- Passing stats
+        pass_attempt,
+        incomplete_pass,
+        complete_pass,
+
+        -- Penalty information
+        penalty,
+        penalty_type,
+
+        -- Team stats
+        home_timeouts_remaining,
+        away_timeouts_remaining,
+        posteam_timeouts_remaining AS possession_team_timeouts,
+        defteam_timeouts_remaining AS defending_team_timeouts,
+        total_home_score,
+        total_away_score,
+        posteam_score AS possession_team_score,
+        defteam_score AS defending_team_score,
+        score_differential,
+
+        -- Advanced metrics
+        ep AS expected_points,
+        epa AS expected_points_added,
+        total_home_epa AS total_home_expected_points_added,
+        total_away_epa AS total_away_expected_points_added,
+        air_epa AS air_expected_points_added,
+        yac_epa AS yards_after_catch_expected_points_added,
+
+        -- Win probabilities
+        wp AS win_probability,
+        def_wp AS defensive_win_probability,
+        home_wp AS home_win_probability,
+        away_wp AS away_win_probability,
+        wpa AS win_probability_added,
+
+        -- Red zone indicator
+        CASE 
+            WHEN yardline_100 <= 20 THEN TRUE 
+            ELSE FALSE 
+        END AS in_red_zone
+    FROM 
+        source
+)
+
+SELECT 
+    *
+FROM 
+    renamed
+  );
+[0m22:10:00.156322 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:10:00.159767 [debug] [Thread-2 (]: Using snowflake connection "model.nfl.stg_player_stats_by_game"
+[0m22:10:00.162446 [debug] [Thread-2 (]: On model.nfl.stg_player_stats_by_game: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "node_id": "model.nfl.stg_player_stats_by_game"} */
+create or replace   view jparkerrogersJBgwU_analytics.dbt_parker_staging.stg_player_stats_by_game
+  
+   as (
+    WITH source AS (
+    SELECT 
+        * 
+    FROM 
+        NFL.PUBLIC.player_stats_by_game
+),
+
+renamed AS (
+    SELECT 
+        -- Player identifiers
+        player_id,
+        
+        -- Player basic info
+        player_display_name AS player_name,
+        first_name,
+        last_name,
+        headshot_url_x AS headshot_url,
+        jersey_number,
+        status AS player_status,
+        status_description_abbr,
+        
+        -- Physical attributes
+        height,
+        weight AS player_weight,
+        age,
+        birth_date,
+        
+        -- Player background
+        college,
+        years_exp AS years_experience,
+        entry_year,
+        rookie_year,
+        draft_club AS draft_team,
+        draft_number,
+        
+        -- Position and team
+        position_x AS position,
+        position_group,
+        team,
+        recent_team AS recent_team,
+        
+        -- Game context
+        season_x AS season, 
+        week_x AS season_week,
+        season_type,
+        game_type,
+        opponent_team,
+        
+        -- Passing stats
+        completions,
+        attempts AS pass_attempts,
+        passing_yards AS pass_yards,
+        passing_air_yards,
+        passing_yards_after_catch,
+        passing_first_downs,
+        passing_epa,
+        passing_2pt_conversions,
+        interceptions,
+        pacr,
+        dakota,
+        
+        -- Sack stats
+        sacks,
+        sack_yards,
+        sack_fumbles,
+        sack_fumbles_lost,
+        
+        -- Rushing stats
+        carries,
+        rushing_yards,
+        rushing_tds,
+        rushing_fumbles,
+        rushing_fumbles_lost,
+        rushing_first_downs,
+        rushing_epa,
+        rushing_2pt_conversions,
+        
+        -- Receiving stats
+        receptions,
+        targets,
+        receiving_yards,
+        receiving_tds,
+        receiving_fumbles,
+        receiving_fumbles_lost,
+        receiving_air_yards,
+        receiving_yards_after_catch,
+        receiving_first_downs,
+        receiving_epa,
+        receiving_2pt_conversions,
+        
+        -- Advanced receiving metrics
+        racr,
+        target_share,
+        air_yards_share,
+        wopr,
+        
+        -- Special teams and fantasy
+        special_teams_tds,
+        fantasy_points,
+        fantasy_points_ppr,
+        
+        -- External IDs
+        espn_id,
+        sportradar_id,
+        yahoo_id,
+        rotowire_id,
+        pff_id,
+        pfr_id,
+        fantasy_data_id,
+        sleeper_id,
+        esb_id,
+        gsis_it_id,
+        smart_id
+    FROM 
+        source
+)
+
+SELECT 
+    *
+FROM 
+    renamed
+  );
+[0m22:10:00.164136 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:10:02.392547 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.228 seconds
+[0m22:10:02.416829 [debug] [Thread-2 (]: On model.nfl.stg_player_stats_by_game: Close
+[0m22:10:02.450419 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.294 seconds
+[0m22:10:02.453236 [debug] [Thread-1 (]: On model.nfl.stg_play_by_play: Close
+[0m22:10:02.608797 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff94ec9e10>]}
+[0m22:10:02.609729 [info ] [Thread-2 (]: 2 of 6 OK created sql view model dbt_parker_staging.stg_player_stats_by_game ... [[32mSUCCESS 1[0m in 2.52s]
+[0m22:10:02.611622 [debug] [Thread-2 (]: Finished running node model.nfl.stg_player_stats_by_game
+[0m22:10:02.613464 [debug] [Thread-4 (]: Began running node model.nfl.int_fantasy_points
+[0m22:10:02.614951 [info ] [Thread-4 (]: 3 of 6 START sql view model dbt_parker_intermediate.int_fantasy_points ......... [RUN]
+[0m22:10:02.616538 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.nfl.int_fantasy_points'
+[0m22:10:02.618080 [debug] [Thread-4 (]: Began compiling node model.nfl.int_fantasy_points
+[0m22:10:02.623108 [debug] [Thread-4 (]: Writing injected SQL for node "model.nfl.int_fantasy_points"
+[0m22:10:02.625408 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff94ec0c10>]}
+[0m22:10:02.626130 [info ] [Thread-1 (]: 1 of 6 OK created sql view model dbt_parker_staging.stg_play_by_play ........... [[32mSUCCESS 1[0m in 2.54s]
+[0m22:10:02.628116 [debug] [Thread-1 (]: Finished running node model.nfl.stg_play_by_play
+[0m22:10:02.630217 [debug] [Thread-6 (]: Began running node model.nfl.int_red_zone_plays
+[0m22:10:02.630736 [debug] [Thread-4 (]: Began executing node model.nfl.int_fantasy_points
+[0m22:10:02.632422 [info ] [Thread-6 (]: 4 of 6 START sql view model dbt_parker_intermediate.int_red_zone_plays ......... [RUN]
+[0m22:10:02.637648 [debug] [Thread-4 (]: Writing runtime sql for node "model.nfl.int_fantasy_points"
+[0m22:10:02.638323 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.nfl.int_red_zone_plays'
+[0m22:10:02.641744 [debug] [Thread-6 (]: Began compiling node model.nfl.int_red_zone_plays
+[0m22:10:02.646739 [debug] [Thread-6 (]: Writing injected SQL for node "model.nfl.int_red_zone_plays"
+[0m22:10:02.648255 [debug] [Thread-4 (]: Using snowflake connection "model.nfl.int_fantasy_points"
+[0m22:10:02.650504 [debug] [Thread-4 (]: On model.nfl.int_fantasy_points: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "node_id": "model.nfl.int_fantasy_points"} */
+create or replace   view jparkerrogersJBgwU_analytics.dbt_parker_intermediate.int_fantasy_points
+  
+   as (
+    SELECT
+    player_id,
+    player_name,
+    position,
+    recent_team,
+    season,
+    season_week,
+    SUM(targets) AS total_targets,
+    SUM(fantasy_points) AS total_fantasy_points,
+    SUM(fantasy_points_ppr) AS total_fantasy_points_ppr,
+    COUNT(DISTINCT season_week) AS games_played,
+    ROUND(SUM(fantasy_points) / COUNT(DISTINCT season_week), 2) AS avg_fantasy_points_per_game,
+    ROUND(SUM(fantasy_points_ppr) / COUNT(DISTINCT season_week), 2) AS avg_fantasy_points_ppr_per_game
+FROM 
+    jparkerrogersJBgwU_analytics.dbt_parker_staging.stg_player_stats_by_game
+WHERE 
+    SEASON_TYPE = 'REG'
+GROUP BY 
+    player_id, player_name, position, recent_team, season, season_week
+  );
+[0m22:10:02.652153 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:10:02.652668 [debug] [Thread-6 (]: Began executing node model.nfl.int_red_zone_plays
+[0m22:10:02.660794 [debug] [Thread-6 (]: Writing runtime sql for node "model.nfl.int_red_zone_plays"
+[0m22:10:02.666369 [debug] [Thread-6 (]: Using snowflake connection "model.nfl.int_red_zone_plays"
+[0m22:10:02.667045 [debug] [Thread-6 (]: On model.nfl.int_red_zone_plays: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "node_id": "model.nfl.int_red_zone_plays"} */
+create or replace   view jparkerrogersJBgwU_analytics.dbt_parker_intermediate.int_red_zone_plays
+  
+   as (
+    -- int_red_zone_plays.sql
+
+WITH red_zone_plays AS (
+    SELECT
+        play_id,
+        fantasy_player_id,
+        fantasy_player_name,
+        play_type,
+        incomplete_pass,
+        complete_pass,
+        pass_attempt,
+        rush,
+        rush_attempt,
+        
+        touchdown,
+        penalty,
+        penalty_type
+    FROM jparkerrogersJBgwU_analytics.dbt_parker_staging.stg_play_by_play
+    WHERE 
+        in_red_zone = TRUE
+        AND play_type NOT IN ('no_play')
+        AND (penalty_type NOT LIKE 'Offensive Holding' OR penalty_type IS NULL)
+        AND season_type LIKE '%REG%'
+)
+
+SELECT * FROM red_zone_plays
+  );
+[0m22:10:02.668797 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m22:10:03.632237 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.963 seconds
+[0m22:10:03.635308 [debug] [Thread-6 (]: On model.nfl.int_red_zone_plays: Close
+[0m22:10:03.739643 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.087 seconds
+[0m22:10:03.742432 [debug] [Thread-4 (]: On model.nfl.int_fantasy_points: Close
+[0m22:10:03.796870 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff94e1e850>]}
+[0m22:10:03.797770 [info ] [Thread-6 (]: 4 of 6 OK created sql view model dbt_parker_intermediate.int_red_zone_plays .... [[32mSUCCESS 1[0m in 1.16s]
+[0m22:10:03.799575 [debug] [Thread-6 (]: Finished running node model.nfl.int_red_zone_plays
+[0m22:10:03.801626 [debug] [Thread-8 (]: Began running node model.nfl.fct_red_zone_player_stats
+[0m22:10:03.803110 [info ] [Thread-8 (]: 5 of 6 START sql table model dbt_parker_facts.fct_red_zone_player_stats ........ [RUN]
+[0m22:10:03.804990 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.nfl.fct_red_zone_player_stats'
+[0m22:10:03.806627 [debug] [Thread-8 (]: Began compiling node model.nfl.fct_red_zone_player_stats
+[0m22:10:03.811592 [debug] [Thread-8 (]: Writing injected SQL for node "model.nfl.fct_red_zone_player_stats"
+[0m22:10:03.820162 [debug] [Thread-8 (]: Began executing node model.nfl.fct_red_zone_player_stats
+[0m22:10:03.841760 [debug] [Thread-8 (]: Writing runtime sql for node "model.nfl.fct_red_zone_player_stats"
+[0m22:10:03.852063 [debug] [Thread-8 (]: Using snowflake connection "model.nfl.fct_red_zone_player_stats"
+[0m22:10:03.852620 [debug] [Thread-8 (]: On model.nfl.fct_red_zone_player_stats: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "node_id": "model.nfl.fct_red_zone_player_stats"} */
+create or replace transient table jparkerrogersJBgwU_analytics.dbt_parker_facts.fct_red_zone_player_stats
+         as
+        (-- fct_red_zone_player_stats.sql
+
+WITH aggregated_stats AS (
+    SELECT
+        fantasy_player_id,
+        fantasy_player_name,
+        COUNT(CASE 
+            WHEN play_type = 'run' AND rush_attempt = 1 THEN 1 
+        END) AS total_rush_attempts,
+        COUNT(CASE 
+            WHEN play_type = 'pass' AND (incomplete_pass = 1 OR complete_pass = 1) THEN 1 
+        END) AS total_targets,
+        COUNT(CASE 
+            WHEN play_type = 'pass' AND complete_pass = 1 THEN 1 
+        END) AS total_pass_completions
+    FROM jparkerrogersJBgwU_analytics.dbt_parker_intermediate.int_red_zone_plays
+    GROUP BY 
+        fantasy_player_id, fantasy_player_name
+)
+
+SELECT 
+    fantasy_player_id,
+    fantasy_player_name,
+    (total_rush_attempts + total_targets) AS total_opportunities,
+    total_rush_attempts,
+    total_targets,
+    total_pass_completions
+FROM aggregated_stats
+ORDER BY total_rush_attempts DESC
+        );
+[0m22:10:03.854349 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m22:10:03.930161 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95b44510>]}
+[0m22:10:03.931047 [info ] [Thread-4 (]: 3 of 6 OK created sql view model dbt_parker_intermediate.int_fantasy_points .... [[32mSUCCESS 1[0m in 1.31s]
+[0m22:10:03.932946 [debug] [Thread-4 (]: Finished running node model.nfl.int_fantasy_points
+[0m22:10:03.934875 [debug] [Thread-2 (]: Began running node model.nfl.fct_fantasy_point_leaders
+[0m22:10:03.936437 [info ] [Thread-2 (]: 6 of 6 START sql table model dbt_parker_facts.fct_fantasy_point_leaders ........ [RUN]
+[0m22:10:03.938062 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.nfl.stg_player_stats_by_game, now model.nfl.fct_fantasy_point_leaders)
+[0m22:10:03.939697 [debug] [Thread-2 (]: Began compiling node model.nfl.fct_fantasy_point_leaders
+[0m22:10:03.944553 [debug] [Thread-2 (]: Writing injected SQL for node "model.nfl.fct_fantasy_point_leaders"
+[0m22:10:03.948414 [debug] [Thread-2 (]: Began executing node model.nfl.fct_fantasy_point_leaders
+[0m22:10:03.951752 [debug] [Thread-2 (]: Writing runtime sql for node "model.nfl.fct_fantasy_point_leaders"
+[0m22:10:03.956682 [debug] [Thread-2 (]: Using snowflake connection "model.nfl.fct_fantasy_point_leaders"
+[0m22:10:03.957217 [debug] [Thread-2 (]: On model.nfl.fct_fantasy_point_leaders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "node_id": "model.nfl.fct_fantasy_point_leaders"} */
+create or replace transient table jparkerrogersJBgwU_analytics.dbt_parker_facts.fct_fantasy_point_leaders
+         as
+        (SELECT
+    player_id,
+    player_name,
+    position,
+    recent_team,
+    total_fantasy_points,
+    total_fantasy_points_pp,
+    games_played,
+    avg_fantasy_points_per_game,
+    avg_fantasy_points_ppr_per_game,
+    RANK() OVER (ORDER BY total_fantasy_points DESC) AS standard_rank,
+    RANK() OVER (ORDER BY total_fantasy_points_ppr DESC) AS ppr_rank
+FROM 
+    jparkerrogersJBgwU_analytics.dbt_parker_intermediate.int_fantasy_points
+ORDER BY 
+    total_fantasy_points DESC
+        );
+[0m22:10:03.958896 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:10:04.577802 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01ba7bd2-0004-9ec8-0003-6fc70043c0da
+[0m22:10:04.578449 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 9 at position 4
+invalid identifier 'TOTAL_FANTASY_POINTS_PP'
+[0m22:10:04.580530 [debug] [Thread-2 (]: On model.nfl.fct_fantasy_point_leaders: Close
+[0m22:10:04.798193 [debug] [Thread-2 (]: Database Error in model fct_fantasy_point_leaders (models/marts/facts/fct_fantasy_point_leaders.sql)
+  000904 (42000): SQL compilation error: error line 9 at position 4
+  invalid identifier 'TOTAL_FANTASY_POINTS_PP'
+  compiled code at target/run/nfl/models/marts/facts/fct_fantasy_point_leaders.sql
+[0m22:10:04.798940 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95a28650>]}
+[0m22:10:04.800925 [error] [Thread-2 (]: 6 of 6 ERROR creating sql table model dbt_parker_facts.fct_fantasy_point_leaders  [[31mERROR[0m in 0.86s]
+[0m22:10:04.802682 [debug] [Thread-2 (]: Finished running node model.nfl.fct_fantasy_point_leaders
+[0m22:10:05.696200 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 1.842 seconds
+[0m22:10:05.699138 [debug] [Thread-8 (]: On model.nfl.fct_red_zone_player_stats: Close
+[0m22:10:05.884819 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c311cd-11f4-44ff-b22a-22e37781c747', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff959697d0>]}
+[0m22:10:05.885743 [info ] [Thread-8 (]: 5 of 6 OK created sql table model dbt_parker_facts.fct_red_zone_player_stats ... [[32mSUCCESS 1[0m in 2.08s]
+[0m22:10:05.887656 [debug] [Thread-8 (]: Finished running node model.nfl.fct_red_zone_player_stats
+[0m22:10:05.890506 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:10:05.890984 [debug] [MainThread]: Connection 'model.nfl.stg_play_by_play' was properly closed.
+[0m22:10:05.892769 [debug] [MainThread]: Connection 'model.nfl.fct_fantasy_point_leaders' was properly closed.
+[0m22:10:05.894550 [debug] [MainThread]: Connection 'list_jparkerrogersJBgwU_analytics_dbt_parker_staging' was properly closed.
+[0m22:10:05.896300 [debug] [MainThread]: Connection 'model.nfl.int_fantasy_points' was properly closed.
+[0m22:10:05.897959 [debug] [MainThread]: Connection 'model.nfl.int_red_zone_plays' was properly closed.
+[0m22:10:05.899722 [debug] [MainThread]: Connection 'model.nfl.fct_red_zone_player_stats' was properly closed.
+[0m22:10:05.901676 [info ] [MainThread]: 
+[0m22:10:05.903252 [info ] [MainThread]: Finished running 4 view models, 2 table models in 0 hours 0 minutes and 7.34 seconds (7.34s).
+[0m22:10:05.905977 [debug] [MainThread]: Command end result
+[0m22:10:05.978064 [info ] [MainThread]: 
+[0m22:10:05.978713 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m22:10:05.980646 [info ] [MainThread]: 
+[0m22:10:05.982596 [error] [MainThread]:   Database Error in model fct_fantasy_point_leaders (models/marts/facts/fct_fantasy_point_leaders.sql)
+  000904 (42000): SQL compilation error: error line 9 at position 4
+  invalid identifier 'TOTAL_FANTASY_POINTS_PP'
+  compiled code at target/run/nfl/models/marts/facts/fct_fantasy_point_leaders.sql
+[0m22:10:05.984440 [info ] [MainThread]: 
+[0m22:10:05.986226 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m22:10:05.988416 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 9.49354, "process_user_time": 3.773449, "process_kernel_time": 0.312772, "process_mem_max_rss": "247856", "process_in_blocks": "3160", "process_out_blocks": "8104", "command_success": false}
+[0m22:10:05.989826 [debug] [MainThread]: Command `dbt run` failed at 22:10:05.989707 after 9.49 seconds
+[0m22:10:05.991382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffadc77e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffadc76650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffadc87fd0>]}
+[0m22:10:05.993018 [debug] [MainThread]: Flushing usage events
+[0m22:10:11.639351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8866d310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff886ba590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff886bae10>]}
+
+
+============================== 22:10:11.642433 | 37f36f35-6476-4c79-9d68-0478574f3790 ==============================
+[0m22:10:11.642433 [info ] [MainThread]: Running with dbt=1.8.7
+[0m22:10:11.644484 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/workspaces/fxtn7c3oiwkalwzz', 'log_path': '/workspaces/fxtn7c3oiwkalwzz/repository/nfl/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:10:12.617542 [info ] [MainThread]: Initializing dbt-loom=0.5.6
+[0m22:10:12.618383 [info ] [MainThread]: dbt-loom: Patching ref protection methods to support dbt-loom dependencies.
+[0m22:10:12.620585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '37f36f35-6476-4c79-9d68-0478574f3790', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff71adeb50>]}
+[0m22:10:12.693499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '37f36f35-6476-4c79-9d68-0478574f3790', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88a23b10>]}
+[0m22:10:12.694552 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m22:10:12.842829 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m22:10:13.333838 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:10:13.334450 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:10:13.336308 [info ] [MainThread]: dbt-loom: Injecting nodes
+[0m22:10:13.338069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'plugin_get_nodes', 'label': '37f36f35-6476-4c79-9d68-0478574f3790', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff70282550>]}
+[0m22:10:13.345162 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.nfl.marts.dimensions
+[0m22:10:13.386056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '37f36f35-6476-4c79-9d68-0478574f3790', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff706927d0>]}
+[0m22:10:13.614879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '37f36f35-6476-4c79-9d68-0478574f3790', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7da9a750>]}
+[0m22:10:13.615687 [info ] [MainThread]: Found 6 models, 1 test, 2 sources, 862 macros
+[0m22:10:13.617390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '37f36f35-6476-4c79-9d68-0478574f3790', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff72a02fd0>]}
+[0m22:10:13.620387 [info ] [MainThread]: 
+[0m22:10:13.621837 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:10:13.628320 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_jparkerrogersJBgwU_analytics_dbt_parker_staging'
+[0m22:10:13.629161 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_jparkerrogersJBgwU_analytics_dbt_parker_facts'
+[0m22:10:13.637732 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate'
+[0m22:10:13.648908 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics_dbt_parker_staging"
+[0m22:10:13.652102 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics_dbt_parker_facts"
+[0m22:10:13.656034 [debug] [ThreadPool]: Using snowflake connection "list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate"
+[0m22:10:13.656596 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics_dbt_parker_staging"} */
+show objects in jparkerrogersJBgwU_analytics.dbt_parker_staging limit 10000
+[0m22:10:13.658418 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_facts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics_dbt_parker_facts"} */
+show objects in jparkerrogersJBgwU_analytics.dbt_parker_facts limit 10000
+[0m22:10:13.660248 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "connection_name": "list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate"} */
+show objects in jparkerrogersJBgwU_analytics.dbt_parker_intermediate limit 10000
+[0m22:10:13.661954 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:10:13.663707 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:10:13.665491 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:10:14.300144 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.638 seconds
+[0m22:10:14.302281 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_staging: Close
+[0m22:10:14.355381 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.690 seconds
+[0m22:10:14.357464 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate: Close
+[0m22:10:14.359015 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.695 seconds
+[0m22:10:14.361632 [debug] [ThreadPool]: On list_jparkerrogersJBgwU_analytics_dbt_parker_facts: Close
+[0m22:10:14.566621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '37f36f35-6476-4c79-9d68-0478574f3790', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff898e6810>]}
+[0m22:10:14.567503 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m22:10:14.569216 [info ] [MainThread]: 
+[0m22:10:14.573344 [debug] [Thread-1 (]: Began running node test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586
+[0m22:10:14.573937 [info ] [Thread-1 (]: 1 of 1 START test source_unique_nfl_player_stats_by_game_PLAYER_ID ............. [RUN]
+[0m22:10:14.575827 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_jparkerrogersJBgwU_analytics_dbt_parker_intermediate, now test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586)
+[0m22:10:14.577499 [debug] [Thread-1 (]: Began compiling node test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586
+[0m22:10:14.594474 [debug] [Thread-1 (]: Writing injected SQL for node "test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586"
+[0m22:10:14.601368 [debug] [Thread-1 (]: Began executing node test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586
+[0m22:10:14.624690 [debug] [Thread-1 (]: Writing runtime sql for node "test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586"
+[0m22:10:14.632567 [debug] [Thread-1 (]: Using snowflake connection "test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586"
+[0m22:10:14.633207 [debug] [Thread-1 (]: On test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "nfl", "target_name": "dev", "node_id": "test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    PLAYER_ID as unique_field,
+    count(*) as n_records
+
+from NFL.PUBLIC.player_stats_by_game
+where PLAYER_ID is not null
+group by PLAYER_ID
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m22:10:14.635148 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:10:15.564906 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.930 seconds
+[0m22:10:15.573950 [debug] [Thread-1 (]: On test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586: Close
+[0m22:10:15.775096 [error] [Thread-1 (]: 1 of 1 FAIL 515 source_unique_nfl_player_stats_by_game_PLAYER_ID ............... [[31mFAIL 515[0m in 1.20s]
+[0m22:10:15.776054 [debug] [Thread-1 (]: Finished running node test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586
+[0m22:10:15.779201 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:10:15.780354 [debug] [MainThread]: Connection 'list_jparkerrogersJBgwU_analytics_dbt_parker_staging' was properly closed.
+[0m22:10:15.782247 [debug] [MainThread]: Connection 'list_jparkerrogersJBgwU_analytics_dbt_parker_facts' was properly closed.
+[0m22:10:15.784172 [debug] [MainThread]: Connection 'test.nfl.source_unique_nfl_player_stats_by_game_PLAYER_ID.7baa829586' was properly closed.
+[0m22:10:15.786014 [info ] [MainThread]: 
+[0m22:10:15.787736 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 2.16 seconds (2.16s).
+[0m22:10:15.789778 [debug] [MainThread]: Command end result
+[0m22:10:15.862274 [info ] [MainThread]: 
+[0m22:10:15.862964 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m22:10:15.864697 [info ] [MainThread]: 
+[0m22:10:15.866459 [error] [MainThread]: [31mFailure in test source_unique_nfl_player_stats_by_game_PLAYER_ID (models/staging/sources_schema.yml)[0m
+[0m22:10:15.868231 [error] [MainThread]:   Got 515 results, configured to fail if != 0
+[0m22:10:15.869758 [info ] [MainThread]: 
+[0m22:10:15.871480 [info ] [MainThread]:   compiled code at target/compiled/nfl/models/staging/sources_schema.yml/source_unique_nfl_player_stats_by_game_PLAYER_ID.sql
+[0m22:10:15.873372 [info ] [MainThread]: 
+[0m22:10:15.875031 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m22:10:15.877451 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 4.2995305, "process_user_time": 3.183535, "process_kernel_time": 0.319351, "process_mem_max_rss": "238128", "process_in_blocks": "2616", "process_out_blocks": "4976", "command_success": false}
+[0m22:10:15.878880 [debug] [MainThread]: Command `dbt test` failed at 22:10:15.878755 after 4.30 seconds
+[0m22:10:15.880358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8866d350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8866d790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88667fd0>]}
+[0m22:10:15.882019 [debug] [MainThread]: Flushing usage events

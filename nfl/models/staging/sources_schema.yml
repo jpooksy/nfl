@@ -798,6 +798,8 @@ sources:
         columns:
           - name: PLAYER_ID
             description: "Unique identifier for the player."
+            tests:
+              - unique
           - name: PLAYER_NAME_X
             description: "Player's name as given in source X."
           - name: PLAYER_DISPLAY_NAME

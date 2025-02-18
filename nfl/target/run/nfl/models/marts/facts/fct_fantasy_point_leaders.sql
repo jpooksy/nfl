@@ -1,4 +1,10 @@
-SELECT
+
+  
+    
+
+        create or replace transient table jparkerrogersJBgwU_analytics.dbt_parker_facts.fct_fantasy_point_leaders
+         as
+        (SELECT
     player_id,
     player_name,
     position,
@@ -11,6 +17,9 @@ SELECT
     RANK() OVER (ORDER BY total_fantasy_points DESC) AS standard_rank,
     RANK() OVER (ORDER BY total_fantasy_points_ppr DESC) AS ppr_rank
 FROM 
-    {{ ref('int_fantasy_points') }}
+    jparkerrogersJBgwU_analytics.dbt_parker_intermediate.int_fantasy_points
 ORDER BY 
     total_fantasy_points DESC
+        );
+      
+  
