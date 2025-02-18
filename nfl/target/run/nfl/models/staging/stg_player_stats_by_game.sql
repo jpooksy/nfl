@@ -17,7 +17,7 @@ renamed AS (
         -- Player basic info
         player_display_name AS player_name,
         first_name,
-        last_name
+        last_name,
         headshot_url_x AS headshot_url,
         jersey_number,
         status AS player_status,
