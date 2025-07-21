@@ -13,6 +13,7 @@ WITH red_zone_plays AS (
         rush,
         rush_attempt,
         
+        
         touchdown,
         penalty,
         penalty_type
