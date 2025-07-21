@@ -8,6 +8,7 @@ WITH red_zone_plays AS (
         play_type,
         incomplete_pass,
         complete_pass,
+        
         pass_attempt,
         rush,
         rush_attempt,
